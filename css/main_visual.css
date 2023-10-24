@@ -80,23 +80,26 @@ body {
   letter-spacing: 2px;
 }
 .about_img {
-  background-color: #1d1d1b;
-  width: 300px;
+  background: url("../images/KakaoTalk_20231024_101714730.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 370px;
   height: 370px;
   float: left;
 }
 .about_three {
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  width: 530px;
 }
 .about_title {
   padding-left: 30px;
-  padding-top: 15px;
 }
 .about_title h2 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 50px;
 }
 .about_text {
   font-size: 16px;
