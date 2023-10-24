@@ -508,7 +508,7 @@ body {
 }
 .project_img_head02 {
   margin-top: 10%;
-  width: 360px;
+  width: 260px;
   height: 70px;
   background-color: #1d1d1b;
   display: flex;
@@ -664,7 +664,7 @@ body {
     margin-left: 3%;
   }
   .project_img_head02 {
-    width: 280px;
+    width: 260px;
     height: 50px;
     font-size: 22px;
     margin-left: 7%;
@@ -808,8 +808,8 @@ body {
     width: 100%;
   }
   .side_menu ul li a {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 32px;
   }
   .wrap {
     max-width: 375px;
@@ -879,6 +879,7 @@ body {
   }
   .skill_expe p {
     width: 270px;
+    font-size: 13px;
   }
   .skill_expe_box p:nth-child(3) {
     padding-top: 2px;
@@ -968,10 +969,10 @@ body {
     margin-top: 10%;
   }
   .project_img_head02 {
-    width: 200px;
+    width: 260px;
     height: 40px;
     font-size: 16px;
-    margin-left: -35px;
+    margin-left: -30px;
   }
   .pr_icon1 {
     width: 20px;
