@@ -6,14 +6,14 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="description" content="NSMILE" />
+    <meta name="description" content="NM" />
     <meta name="keywords" content="포트폴리오, 포폴" />
-    <meta property="og:title" content="NSMILE" />
+    <meta property="og:title" content="NM" />
     <meta property="keyword" content="포트폴리오, 포폴" />
-    <meta property="og:description" content="NSMILE" />
+    <meta property="og:description" content="NM" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="NSMILE" />
-    <meta name="twitter:description" content="NSMILE" />
+    <meta name="twitter:title" content="NM" />
+    <meta name="twitter:description" content="NM" />
     <!--  -->
     <meta
       name="viewport"
@@ -32,8 +32,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>NSMILE</title>
+    <title>NM</title>
     <!-- Google Tag Manager -->
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <!--  -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -70,30 +74,34 @@
         <div class="inner">
           <!-- 로고 -->
           <div class="header_logo">
-            <a href="index.html"><img src="images/logo_f.png" alt="로고" /></a>
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
           </div>
+          <section class="side_menubar">
+            <div class="side_menu">
+              <ul>
+                <li><a href="#scroll1" class="scroll_move">NSMILE</a></li>
+                <li><a href="#scroll2" class="scroll_move">ABOUT</a></li>
+                <li><a href="#scroll3" class="scroll_move">SKILLS</a></li>
+                <li><a href="#scroll4" class="scroll_move">DESIGN</a></li>
+                <li><a href="#scroll5" class="scroll_move">PROJECT</a></li>
+              </ul>
+            </div>
+          </section>
         </div>
       </header>
       <!-- 비주얼 -->
       <section class="visual clearfix" id="visual">
         <div class="inner scroll1" id="scroll1">
           <div class="visual_port">
-            <div class="visual_port_img">
-              <img src="images/visual_port2.png" alt="비주얼" />
+            <div class="visual_text">
+              <div class="visual_text01">
+                <h1>PORTFOLIO</h1>
+              </div>
+              <div class="visual_text02">
+                <h2>UI / UX <b>DESIGN</b></h2>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- 사이드바 -->
-      <section class="side_menubar">
-        <div class="side_menu">
-          <ul>
-            <li><a href="#scroll1" class="scroll_move">NSMILE</a></li>
-            <li><a href="#scroll2" class="scroll_move">ABOUT</a></li>
-            <li><a href="#scroll3" class="scroll_move">SKILLS</a></li>
-            <li><a href="#scroll4" class="scroll_move">DESIGN</a></li>
-            <li><a href="#scroll5" class="scroll_move">PROJECT</a></li>
-          </ul>
         </div>
       </section>
       <!-- about -->
@@ -143,47 +151,42 @@
       </section>
       <!-- skill -->
       <section class="skill scroll3" id="scroll3">
-        <div class="line00"></div>
         <div class="skill_heading">
           <div class="experience_img_head" id="heading">
             <h2>EXPERIENCE</h2>
           </div>
-          <div class="skill_img_head" id="heading"><h2>SKILLS</h2></div>
         </div>
         <div class="skill_foot">
           <div class="skill_expe">
-            <div class="skill_expe_box">
-              <h3>2013. 03</h3>
-              <p>대구 매천고등학교 졸업</p>
-            </div>
-            <div class="skill_expe_box">
-              <h3>2012. 03 ~ 2016. 03</h3>
-              <p>대구대학교 금융·보험 학과 중퇴</p>
-            </div>
-            <div class="skill_expe_box">
-              <h3>2016. 03 ~ 2018. 03</h3>
-              <p>용인송담대학교 시각디자인 학과 졸업</p>
-            </div>
-            <div class="skill_expe_box">
-              <h3>2023. 05 ~ 2023. 10</h3>
-              <p>그린컴퓨터 아트학원 대구캠퍼스 수료</p>
-              <p class="skill_line">
-                기업 요구를 반영한 디지털 비즈니스 웹앱(UX)디자인 & 개발자
-                양성과정
-              </p>
+            <div class="skill_expe_h3"><h3>"</h3></div>
+            <div class="sebox">
+              <div class="skill_expe_box">
+                <h3>2013. 03</h3>
+                <p>대구 매천고등학교 졸업</p>
+              </div>
+              <div class="skill_expe_box">
+                <h3>2012. 03 ~ 2016. 03</h3>
+                <p>대구대학교 금융·보험 학과 중퇴</p>
+              </div>
+              <div class="skill_expe_box">
+                <h3>2016. 03 ~ 2018. 03</h3>
+                <p>용인송담대학교 시각디자인 학과 졸업</p>
+              </div>
+              <div class="skill_expe_box">
+                <h3>2023. 05 ~ 2023. 10</h3>
+                <p>그린컴퓨터 아트학원 대구캠퍼스 수료</p>
+                <p class="skill_line">
+                  기업 요구를 반영한 디지털 비즈니스 웹앱(UX)디자인 & 개발자
+                  양성과정
+                </p>
+              </div>
             </div>
           </div>
-          <div class="skill_none" id="heading">
-            <h2>SKILLS</h2>
-          </div>
-          <div class="skill_skillicon">
-            <img src="images/skillicon.png" alt="스킬아이콘" />
-          </div>
+          <div class="skill_skillicon"></div>
         </div>
       </section>
       <!-- project -->
       <section class="project scroll4" id="scroll4">
-        <div class="line01"></div>
         <div class="skill_heading">
           <div class="project_img_head" id="heading"><h2>DESIGN</h2></div>
         </div>
@@ -198,22 +201,14 @@
               </div>
               <div class="project_text">
                 <h3>웹 사이트 리뉴얼 [BMW]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
+
                 <p>2023년 8월 17일 오후 2:21</p>
                 <div class="pr_bottom">
                   <div class="pricon">
-                    <a href="#"><div class="pr_icon1"></div></a>
                     <a
                       href="https://www.figma.com/community/file/1298568879552201285/mitipo-bmw"
-                      ><div class="pr_icon2"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/BMW-d091dcfd2c2f47bab98d934674d2e2d6?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
+                      ><div class="pr_icon2">VIEW SITE</div></a
+                    >
                   </div>
                 </div>
               </div>
@@ -227,248 +222,28 @@
               </div>
               <div class="project_text">
                 <h3>웹 사이트 리뉴얼 [IKEA]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
+
                 <p>2023년 8월 25일 오후 5:45</p>
                 <div class="pr_bottom">
                   <div class="pricon">
-                    <a href="#"><div class="pr_icon1"></div></a>
                     <a
-                      href="https://www.figma.com/file/MtnLxVG17BOkjpKvAFkHgc/%EB%82%A8%EC%8A%B9%EB%AF%BC_IKEA?type=design&mode=design&t=jWZm9Ax11epdyzR7-1"
-                      ><div class="pr_icon2"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/IKEA-32be7c2e4234496ab186c21de501cef8?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project_second">
-            <div class="project_box">
-              <div class="pro">
-                <a
-                  href="https://www.notion.so/mitipo/abd0324018ce4d75b3da73cb525207e5?pvs=4"
-                  ><div class="project_img03 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>로고 디자인</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button class="pr_icon">아이콘</button>
-                </div>
-                <p>2023년 9월 11일 오후 2:59</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="#"><div class="pr_icon2"></div></a>
-                    <a
-                      href="https://www.notion.so/mitipo/abd0324018ce4d75b3da73cb525207e5?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project_box">
-              <div class="pro">
-                <a
-                  href="https://www.notion.so/mitipo/5be3ab292ec04f3f9139ca6d7713eb7f?pvs=4"
-                  ><div class="project_img04 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>배너 디자인</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
-                <p>2023년 9월 13일 오후 4:18</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="#"><div class="pr_icon2"></div></a>
-                    <a
-                      href="https://www.notion.so/mitipo/5be3ab292ec04f3f9139ca6d7713eb7f?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project_second">
-            <div class="project_box">
-              <div class="pro">
-                <a
-                  href="https://www.figma.com/community/file/1298569374105270857/mitipo-app-design"
-                  ><div class="project_img05 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>앱 디자인</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button class="pr_icon">UI/UX</button>
-                </div>
-                <p>2023년 9월 25일 오후 5:50</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a
-                      href="https://www.figma.com/community/file/1298569374105270857/mitipo-app-design"
-                      ><div class="pr_icon2"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/7b90f6f2281a430e937ae9166aca9fd7?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project_box">
-              <div class="pro">
-                <a href="https://hyundae-ecru.vercel.app/"
-                  ><div class="project_img06 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>웹 사이트 리뉴얼 [현대건설]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
-                <p>2023년 8월 26일 오전 10:32</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="https://hyundae-ecru.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/Hyundai-873746b8f92e4a939418f89b0d0e694d?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project_second">
-            <div class="project_box">
-              <div class="pro">
-                <a href="https://stx-f.vercel.app/"
-                  ><div class="project_img07 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>웹 사이트 리뉴얼 [STX]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button class="pr_icon">UI/UX</button>
-                </div>
-                <p>2023년 7월 30일 오후 1:50</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="https://stx-f.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/STX-d7f25c84ee074f38a48c8c9c7b3080be?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project_box">
-              <div class="pro">
-                <a href="https://hansalim-eight.vercel.app/"
-                  ><div class="project_img08 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>웹 사이트 리뉴얼 [한살림]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
-                <p>2023년 8월 2일 오후 6:8</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="https://hansalim-eight.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/12595380bc8a438eb7808899e044372b?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project_second">
-            <div class="project_box">
-              <div class="pro">
-                <a href="https://dosiraktongtong.vercel.app/"
-                  ><div class="project_img09 project_img"></div
-                ></a>
-              </div>
-              <div class="project_text">
-                <h3>웹 사이트 리뉴얼 [도시락통]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button class="pr_icon">UI/UX</button>
-                </div>
-                <p>2023년 7월 14일 오전 11:50</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="https://dosiraktongtong.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
-                    <a
-                      href="https://www.notion.so/mitipo/6182905ed10b4b33977f2ee9a8ad775e?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project_box" id="project_none00">
-              <div class="pro">
-                <div class="project_img10 project_img"></div>
-              </div>
-              <div class="project_text" id="project_none">
-                <h3>웹 사이트 리뉴얼 []</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
-                <p>2023년 9월 13일 오후 4:18</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="#"><div class="pr_icon1"></div></a>
-                    <a href="#"><div class="pr_icon2"></div></a>
-                    <a
-                      href="https://www.notion.so/mitipo/5be3ab292ec04f3f9139ca6d7713eb7f?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
+                      href="https://www.figma.com/community/file/1298568879552201285/mitipo-bmw"
+                      ><div class="pr_icon2">VIEW SITE</div></a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="line02 scroll5" id="scroll5"></div>
+      </section>
+      <section class="project02">
         <div class="skill_heading02">
           <div class="project_img_head02" id="heading">
             <h2>PROJECT</h2>
           </div>
         </div>
-        <div class="project_result project_result02 scroll5">
+        <div class="project_result project_result02 scroll5" id="scroll5">
           <div class="project_second">
             <div class="project_box">
               <div class="pro">
@@ -478,20 +253,14 @@
               </div>
               <div class="project_text">
                 <h3>팀 프로젝트 [아쿠아리움]</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button class="pr_icon">아이콘</button>
-                </div>
+
                 <p>2023년 9월 11일 오후 2:59</p>
                 <div class="pr_bottom">
                   <div class="pricon">
-                    <a href="https://ararium-ten.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
                     <a
-                      href="https://www.notion.so/mitipo/24ba72a72c8140e9bc27b066451851f6?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
+                      href="https://www.figma.com/community/file/1298568879552201285/mitipo-bmw"
+                      ><div class="pr_icon2">VIEW SITE</div></a
+                    >
                   </div>
                 </div>
               </div>
@@ -504,20 +273,13 @@
               </div>
               <div class="project_text">
                 <h3>팀 프로젝트 [웨딩플랜 서비스] (A)</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
                 <p>2023년 9월 25일 오후 4:18</p>
                 <div class="pr_bottom">
                   <div class="pricon">
-                    <a href="https://weddingforyou.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
                     <a
-                      href="https://www.notion.so/mitipo/A-c8fa064bcb934dc895dac277dd301240?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
+                      href="https://www.figma.com/community/file/1298568879552201285/mitipo-bmw"
+                      ><div class="pr_icon2">VIEW SITE</div></a
+                    >
                   </div>
                 </div>
               </div>
@@ -532,20 +294,14 @@
               </div>
               <div class="project_text">
                 <h3>팀 프로젝트 [웨딩플랜 서비스] (B)</h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button class="pr_icon">UI/UX</button>
-                </div>
+
                 <p>2023년 10월 13일 오후 5:50</p>
                 <div class="pr_bottom">
                   <div class="pricon">
-                    <a href="https://weddingforyoub.vercel.app/"
-                      ><div class="pr_icon1"></div
-                    ></a>
                     <a
-                      href="https://www.notion.so/mitipo/B-d4782d9ddec849309219441c5b75f622?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
+                      href="https://www.figma.com/community/file/1298568879552201285/mitipo-bmw"
+                      ><div class="pr_icon2">VIEW SITE</div></a
+                    >
                   </div>
                 </div>
               </div>
@@ -556,21 +312,8 @@
               </div>
               <div class="project_text" id="project_none">
                 <h3></h3>
-                <div class="pr_button">
-                  <button>브랜드</button>
-                  <button>UI/UX</button>
-                </div>
                 <p>2023년 9월 13일 오후 4:18</p>
-                <div class="pr_bottom">
-                  <div class="pricon">
-                    <a href="#"><div class="pr_icon1"></div></a>
-                    <a href="#"><div class="pr_icon2"></div></a>
-                    <a
-                      href="https://www.notion.so/mitipo/5be3ab292ec04f3f9139ca6d7713eb7f?pvs=4"
-                      ><div class="pr_icon3"></div
-                    ></a>
-                  </div>
-                </div>
+                <div class="pr_bottom"></div>
               </div>
             </div>
           </div>
