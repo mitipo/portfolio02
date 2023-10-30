@@ -157,6 +157,7 @@
 .about_img_head {
   text-align: center;
   padding-bottom: 10%;
+  padding-top: 7%;
   width: 100%;
   height: 70px;
   display: flex;
@@ -252,6 +253,7 @@
 /* 스킬 */
 .skill {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -271,9 +273,9 @@
 }
 .skill_foot {
   padding-top: 5%;
+  padding-left: 22%;
   display: flex;
   flex-direction: row;
-  max-width: 1120px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -336,11 +338,12 @@
 }
 .skill_skillicon {
   position: relative;
-  width: 556px;
-  height: 533px;
+  width: 494px;
+  height: 475px;
   background: url("../images/star.png") no-repeat;
   background-position: center;
   background-size: cover;
+  padding-left: 100px;
 }
 .skill_skillicon img {
   width: 100%;
@@ -674,15 +677,33 @@
   margin-top: 5%;
 }
 /* -----------반응형----------- */
-@media all and (max-width: 1024px) {
-  .visual_port {
-    height: 800px;
+@media all and (max-width: 1440px) {
+  .footer_contact {
+    width: 40%;
   }
-  .visual_port_img {
-    width: 85%;
+  .skill_foot {
+    padding-left: 15%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .visual_ani {
+    position: relative;
+  }
+  .figure {
+    padding: 0;
+    margin-top: -5%;
+  }
+  .visual_text {
+    padding-left: 100px;
+  }
+  .side_menubar {
+    padding: 0;
+  }
+  .side_menu ul li {
+    padding-right: 25px;
   }
   .side_menu ul li a {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 39px;
   }
   .about_bla {
@@ -709,42 +730,88 @@
   .about_contact01 {
     margin-right: -20px;
   }
-  .skill_foot {
-    max-width: 740px;
-    margin-left: -100px;
+  #heading {
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
   }
-  .skill_heading {
-    max-width: 740px;
-    margin-left: -12%;
+  .skill_expe_h3 {
+    padding: 0;
+    margin: 0;
+  }
+  .skill_expe_h3 h3 {
+    font-size: 120px;
+    padding: 0;
   }
   .skill_expe {
-    width: 400px;
+    width: 350px;
+    height: 420px;
+    margin-top: 20px;
+  }
+  .skill_expe_box {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  }
+  .skill_expe_box h3 {
+    font-size: 16px;
+    width: 200px;
+    line-height: 15px;
+  }
+  .skill_expe_box p {
+    width: 290px;
+    line-height: 18px;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .skill_expe_box p:nth-child(3) {
+    font-size: 12px;
+  }
+  .skill_skillicon {
+    display: none;
+  }
+  .skill_foot {
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10%;
+  }
+  .skill_skillicon1024 {
+    background: url("../images/star1024.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 419px;
+    height: 403px;
+    position: relative;
+    right: 0;
+    margin: 0;
   }
   .project_first {
-    max-width: 740px;
+    max-width: 768px;
   }
   .project_second {
-    max-width: 740px;
+    max-width: 768px;
   }
-  .project_img {
-    max-width: 330px;
+  .project_box {
+    width: 360px;
+    height: 420px;
+  }
+  .pro {
+    width: 300px;
   }
   .project_text {
-    max-width: 330px;
+    padding: 0;
+    max-width: 300px;
   }
-  .about_img_head {
-    width: 160px;
-    height: 50px;
-    font-size: 22px;
-    margin-left: -57%;
+  .project_text h3 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .project_text p {
+    font-size: 12px;
+    margin-top: -10px;
   }
   .experience_img_head {
     width: 240px;
-    height: 50px;
-    font-size: 22px;
-  }
-  .skill_img_head {
-    width: 160px;
     height: 50px;
     font-size: 22px;
   }
@@ -760,381 +827,177 @@
     font-size: 22px;
     margin-left: 7%;
   }
-  .project_result {
-    margin-left: -100px;
-  }
-  .line01 {
-    max-width: 710px;
-    margin-left: -10%;
-  }
-  .line02 {
-    max-width: 710px;
-    margin-left: -10%;
-  }
-  .line00 {
-    max-width: 740px;
-    margin-left: -10%;
-  }
   .footer_contact {
-    width: 50%;
+    width: 65%;
   }
 }
 @media all and (max-width: 768px) {
-  .visual_port {
-    height: 550px;
+  .header_logo {
+    margin: 15px;
   }
-  .visual_port_img {
-    width: 80%;
+  .side_menubar {
+    padding: 0;
+  }
+  .side_menu ul li {
+    padding-right: 25px;
   }
   .side_menu ul li a {
-    font-size: 20px;
-    line-height: 37px;
+    font-size: 14px;
+    padding: 0;
   }
-  section {
-    max-width: 760px;
+  .visual_text {
+    padding-left: 300px;
   }
-  .about_bla {
-    flex-direction: column;
-  }
-  .about_img {
-    margin-top: 5%;
-  }
-  .about_three {
-    padding-top: 5%;
-  }
-  .about_title {
-    padding-left: 0;
-  }
-  .about_text {
-    padding-left: 0;
-  }
-  .about_contact {
-    padding-left: 0;
-  }
-  .skill {
-    max-width: 580px;
+  .visual_text h1 {
+    font-size: 80px;
   }
   .skill_foot {
-    flex-direction: column;
-  }
-  .skill_img_head {
-    display: none;
-  }
-  .skill_skillicon {
-    padding-top: 10%;
-    padding-left: 10%;
-  }
-  .skill_none {
-    width: 180px;
-    height: 50px;
-    background-color: #1d1d1b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #ffcf01;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-left: -55%;
-    margin-top: 10%;
-  }
-  .project {
-    max-width: 650px;
-  }
-  .project_img_head {
-    margin-left: -15px;
-  }
-  .project_img_head02 {
-    margin-left: -50px;
-    margin-top: 20px;
-  }
-  .project_result {
-    max-width: 650px;
+    max-width: 700px;
+    padding-top: 80px;
+    padding-left: 0;
   }
   .project_first {
-    width: 100%;
-    padding-left: 40px;
+    max-width: 700px;
   }
   .project_second {
-    width: 100%;
-    padding-left: 40px;
+    max-width: 700px;
   }
   .project_box {
-    padding-right: 20px;
+    width: 330px;
   }
-  .project_img {
-    max-width: 300px;
+  .pro {
+    max-width: 280px;
   }
   .project_text {
-    max-width: 300px;
-  }
-  .footer_contact {
-    width: 60%;
-  }
-  .line00 {
-    margin-left: -60px;
-  }
-  .line01 {
-    margin-left: -100px;
-  }
-  .line02 {
-    margin-left: -100px;
-    margin-top: 100px;
+    max-width: 280px;
   }
 }
 @media all and (max-width: 480px) {
-  body {
-    max-width: 375px;
-    width: 100%;
-    overflow-x: hidden;
+  .header_logo {
+    width: 60px;
   }
-  .visual .inner {
-    max-width: 375px;
-    width: 100%;
-  }
-  .visual_port {
-    height: 400px;
-  }
-  .visual_port_img {
-    width: 100%;
+  .side_menu {
+    display: none;
   }
   .side_menu ul li a {
-    font-size: 15px;
-    line-height: 32px;
+    font-size: 12px;
   }
-  .wrap {
-    max-width: 375px;
+  .ham_menu {
+    display: block;
+    width: 100%;
+    right: 20px;
+    font-size: 35px;
+    position: relative;
+    color: #fff;
   }
-  section {
-    max-width: 375px;
+  .visual_text {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    top: 20%;
+    left: 10%;
   }
-  .project {
-    max-width: 375px;
+  .figure {
+    margin-top: -30%;
+    margin-right: 21%;
   }
-  .about {
-    max-width: 375px;
+  .visual_text h1 {
+    font-size: 58px;
+  }
+  .visual_text h2 {
+    font-size: 38px;
   }
   .about_bla {
     flex-direction: column;
-    max-width: 375px;
-    width: 100%;
-  }
-  .about_img {
-    margin-top: 5%;
-    width: 300px;
-    height: 300px;
   }
   .about_three {
-    padding-top: 5%;
-    width: 250px;
-    margin-left: -10%;
-  }
-  .about_title {
-    padding-left: 0;
-  }
-  .about_title h2 {
-    font-size: 24px;
-  }
-  .about_text {
-    padding-left: 0;
-    font-size: 12px;
-  }
-  .about_contact {
-    padding-left: 0;
-    font-size: 12px;
-    flex-direction: column;
-  }
-  .about_contact02 {
-    padding-top: 18px;
-  }
-  .skill {
-    max-width: 375px;
+    padding-top: 50px;
   }
   .skill_foot {
     flex-direction: column;
   }
-  .skill_heading {
-    width: 100%;
-  }
-  .skill_img_head {
-    display: none;
-  }
-  .skill_expe {
-    width: 250px;
-  }
-  .skill_expe_box {
-    width: 250px;
-  }
-  .skill_expe h3 {
-    width: 270px;
-  }
-  .skill_expe p {
-    width: 270px;
-    font-size: 13px;
-  }
-  .skill_expe_box p:nth-child(3) {
-    padding-top: 2px;
-    line-height: 17px;
-    font-size: 12px;
-  }
-  .skill_skillicon {
-    padding-top: 10%;
-    width: 300px;
-    margin-left: -50px;
-  }
-  .skill_none {
-    width: 120px;
-    height: 40px;
-    background-color: #1d1d1b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: #ffcf01;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-left: -52%;
-    margin-top: 10%;
-  }
   .project_first {
-    width: 100%;
     flex-direction: column;
-    margin-left: -30px;
   }
   .project_second {
-    width: 100%;
     flex-direction: column;
-    margin-left: -30px;
   }
   .project_box {
-    padding-right: 20px;
-    width: 270px;
+    margin: 12px;
   }
-  .project_img {
-    max-width: 270px;
+  .project02 {
+    padding-bottom: 10%;
   }
-  .project_text {
-    max-width: 270px;
+  #project_none00 {
+    display: none;
   }
-  .project_text h3 {
-    font-size: 16px;
-    text-align: center;
+  .pronone {
+    display: none;
+  }
+  .project_img14 {
+    display: none;
+  }
+  #heading {
+    margin: 0;
+  }
+  .footer_contact {
+    width: 80%;
+    font-size: 14px;
+  }
+  .copy {
+    font-size: 11px;
     padding-top: 10px;
-    padding-bottom: 5px;
+  }
+  .visual_text {
+    width: 90%;
+  }
+  .visual_text h1 {
+    font-size: 52px;
+  }
+  .visual_text h2 {
+    font-size: 30px;
+  }
+  .visual_text {
+    line-height: 35px;
+    padding: 0;
     width: 100%;
+    margin-left: -20px;
   }
-  .footer_contact {
-    width: 60%;
-  }
-  .line00 {
-    margin-left: -130px;
-    max-width: 300px;
-  }
-  .line01 {
-    margin-left: -130px;
-    max-width: 300px;
+  .about_img {
     margin-top: 10%;
   }
-  .line02 {
-    margin-left: -130px;
-    max-width: 300px;
-    margin-top: -20%;
+  .about_text {
+    width: 360px;
   }
-  .about_img_head {
-    width: 120px;
-    height: 40px;
-    font-size: 16px;
-    margin-left: -65%;
+  .about_contact {
+    width: 95%;
   }
-  .experience_img_head {
-    width: 180px;
-    height: 40px;
-    font-size: 16px;
-    margin-left: -8px;
+  .about_tel {
+    flex-direction: column;
+    display: flex;
   }
-  .project_img_head {
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
-    margin-left: -10px;
-    margin-top: 10%;
+  .about_git {
+    display: flex;
+    flex-direction: column;
   }
-  .project_img_head02 {
-    width: 260px;
-    height: 40px;
-    font-size: 16px;
-    margin-left: -30px;
+  .about_contact i {
+    padding-bottom: 7px;
   }
-  .pr_icon1 {
-    width: 20px;
-    height: 20px;
+  .skill {
+    padding-top: 60%;
   }
-  .pr_icon2 {
-    width: 20px;
-    height: 20px;
+  .project {
+    padding-top: 60%;
   }
-  .pr_icon3 {
-    width: 21px;
-    height: 21px;
-  }
-  .footer {
-    position: relative;
-    max-width: 375px;
-    width: 100%;
-    margin-top: -50%;
+  .project02 {
+    padding-top: 40%;
+    padding-bottom: 20%;
   }
   .footer_contact {
-    position: relative;
     width: 90%;
     font-size: 12px;
-  }
-  .footer_contact b {
-    font-size: 14px;
   }
   .copy {
     font-size: 10px;
   }
 }
-/* }
-@media all and (max-width: 375px) {
-  body {
-    max-width: 360px;
-    width: 100%;
-  }
-  html {
-    max-width: 360px;
-  }
-  section {
-    max-width: 360px;
-  }
-  .wrap {
-    max-width: 360px;
-  }
-  .inner {
-    max-width: 360px;
-  }
-  .visual {
-    max-width: 360px;
-  }
-  .skill {
-    max-width: 360px;
-  }
-  .project {
-    max-width: 360px;
-  }
-  .side_menu {
-    max-width: 360px;
-  }
-  .footer {
-    max-width: 360px;
-  }
-  .about_bla {
-    width: 300px;
-  }
-  .about_img {
-    width: 300px;
-  }
-  .about_three {
-    width: 300px;
-  }
-} */
